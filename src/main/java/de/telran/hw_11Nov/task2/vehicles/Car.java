@@ -1,16 +1,15 @@
 package de.telran.hw_11Nov.task2.vehicles;
 
 public class Car extends Vehicle {
-    private byte wheelsNumber;
     private byte seatsNumber;
-    private boolean isElectric;
+    private int engineCapacity;
 
-    public byte getWheelsNumber() {
-        return wheelsNumber;
+    public int getEngineCapacity() {
+        return engineCapacity;
     }
 
-    public void setWheelsNumber(byte wheelsNumber) {
-        this.wheelsNumber = wheelsNumber;
+    public void setEngineCapacity(int engineCapacity) {
+        this.engineCapacity = engineCapacity;
     }
 
     public byte getSeatsNumber() {
@@ -21,11 +20,10 @@ public class Car extends Vehicle {
         this.seatsNumber = seatsNumber;
     }
 
-    public boolean isElectric() {
-        return isElectric;
-    }
-
-    public void setElectric(boolean electric) {
-        isElectric = electric;
+    @Override
+    public String toString() {
+        return "seatsNumber=" + seatsNumber +
+                ", engineCapacity=" + engineCapacity +
+                " " + super.toString();
     }
 }
