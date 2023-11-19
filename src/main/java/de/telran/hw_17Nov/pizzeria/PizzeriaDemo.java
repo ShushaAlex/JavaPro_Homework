@@ -5,8 +5,6 @@ import de.telran.hw_17Nov.pizzeria.interfaces.Cleaner;
 import de.telran.hw_17Nov.pizzeria.interfaces.Cook;
 import de.telran.hw_17Nov.pizzeria.interfaces.Waitress;
 
-import java.awt.event.ActionListener;
-
 /*
    У нас есть пиццерия. В ней работает несколько человек.
    Кассир - выставляет счет, принимает оплату.
