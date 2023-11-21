@@ -41,5 +41,9 @@ public class PizzeriaDemo {
 
         System.out.println(pizzeria.getProceeds());
         System.out.println(pizzeria.getOrdersCount());
+
+        cleaner.cleanTable();
+        waitress.cleanTable();
+
     }
 }

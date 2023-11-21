@@ -5,6 +5,6 @@ public interface Cleaner {
         System.out.println("All dishes are clean!");
     }
     default void cleanTable() {
-        System.out.println("I cleaned the table!");
+        System.out.println("Table is clean");
     }
 }

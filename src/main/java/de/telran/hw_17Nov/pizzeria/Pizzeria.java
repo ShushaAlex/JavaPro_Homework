@@ -40,7 +40,7 @@ public class Pizzeria implements Cashier, Waitress, Cook, Cleaner {
 
     @Override
     public void cleanTable() {
-        Waitress.super.cleanTable();
+        Cleaner.super.cleanTable();
     }
 
     @Override
