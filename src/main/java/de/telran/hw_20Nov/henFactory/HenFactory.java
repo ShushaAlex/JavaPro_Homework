@@ -1,18 +1,22 @@
 package de.telran.hw_20Nov.henFactory;
 
+import de.telran.hw_20Nov.henFactory.henTypes.BelarusianHen;
+import de.telran.hw_20Nov.henFactory.henTypes.MoldovanHen;
+import de.telran.hw_20Nov.henFactory.henTypes.RussianHen;
+import de.telran.hw_20Nov.henFactory.henTypes.UkrainianHen;
+
 public class HenFactory {
-    public String getHen(String land) {
+    public Hen getHen(String land) {
         switch(land) {
             case "Ukraine":
-                return "UkrainianHen";
+                return new UkrainianHen(30);
             case "Russia":
-                return "RussianHen";
+                return new RussianHen(1);
             case "Belarus":
-                return "MoldovanHen";
+                return new BelarusianHen(5);
             case "Moldova":
-                return "BelarusianHen";
-            default:
-                return "No such type of Hen";
+                return new MoldovanHen(70);
         }
+        return null;
     }
 }

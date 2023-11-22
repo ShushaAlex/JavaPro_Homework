@@ -18,4 +18,12 @@ public class BelarusianHen extends Hen {
     public String getDescription() {
         return "I am from " + land + ". I produce " + getCountOfEggsPerMonth() + " eggs per months.";
     }
+
+    @Override
+    public String toString() {
+        return "BelarusianHen{" +
+                "eggsPerWeek=" + eggsPerWeek +
+                ", land='" + land + '\'' +
+                "} " + super.toString();
+    }
 }

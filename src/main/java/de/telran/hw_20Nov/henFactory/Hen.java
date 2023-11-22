@@ -5,4 +5,9 @@ public abstract class Hen {
     protected String getDescription() {
         return "I am chicken!";
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

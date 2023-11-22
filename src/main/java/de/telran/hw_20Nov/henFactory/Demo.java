@@ -25,18 +25,10 @@ import de.telran.hw_20Nov.henFactory.henTypes.UkrainianHen;
 public class Demo {
     public static void main(String[] args) {
         HenFactory henFactory = new HenFactory();
-        System.out.println(henFactory.getHen("Ukraine"));
+        Hen newHen = henFactory.getHen("Ukraine");
+        System.out.println(newHen);
 
-        UkrainianHen ukrainianHen = new UkrainianHen(33);
-        System.out.println(ukrainianHen.getDescription());
-
-        RussianHen russianHen = new RussianHen(1);
-        System.out.println(russianHen.getDescription());
-
-        MoldovanHen moldovanHen = new MoldovanHen(70);
-        System.out.println(moldovanHen.getDescription());
-
-        BelarusianHen belarusianHen = new BelarusianHen(10);
-        System.out.println(belarusianHen.getDescription());
+        System.out.println(newHen.getCountOfEggsPerMonth());
+        System.out.println(newHen.getDescription());
     }
 }
