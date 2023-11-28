@@ -10,22 +10,14 @@ public class Demo {
         array.add(4);
         array.add(1);
         array.add(12);
-        array.add(10);
-        array.add(4);
-        array.add(1);
-        array.add(12);
-        array.add(1);
-        array.add(12);
-        array.add(4);
-        System.out.println("array after addElement " + array);
+        System.out.println("array after addElement 10, 4, 1, 12: " + array);
         array.add(newArr);
-        System.out.println("array after addElements " + array);
-        array.insert(2, 666);
-        array.insert(1, 555);
+        System.out.println("array after addElements {1, 4, 5, 6, 7, 4, 2, 6, 2}: " + array);
         array.insert(0, 777);
-        System.out.println("array after insert " + array);
-        System.out.println("getElem " + array.getElem(5));
-        System.out.println("getIndexes " + Arrays.toString(array.getIndexes(6)));
-
+        System.out.println("array after insert element 777 to index 0: " + array);
+        System.out.println("getElem at index 3: " + array.getElem(3));
+        System.out.println("getIndexes of element 6: " + Arrays.toString(array.getIndexes(6)));
+        array.delete(2);
+        System.out.println("array after delete index 2 " + array);
     }
 }

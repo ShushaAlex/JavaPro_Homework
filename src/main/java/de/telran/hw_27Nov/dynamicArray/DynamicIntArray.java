@@ -57,10 +57,11 @@ public class DynamicIntArray {
         }
     }
     public void delete (int index) {
-        for (int i = index; i < arr.length; i++) {
+        for (int i = index; i < arr.length - 1; i++) {
             int tmp = arr[i + 1];
             arr[i] = tmp;
         }
+        arr[length] = 0;
     }
     int getElem(int index) {
         return arr[index];
