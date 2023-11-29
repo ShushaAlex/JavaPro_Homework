@@ -31,7 +31,7 @@ public class User {
     public void placeSingleDeckShips() {
         UserInput ui = new UserInput();
         int[] ship1 = ui.getCoordinates();
-        if (isRightCoordinates(ship1)) {
+        if (isRightCoordinates(ship1) && isFreeCells(ship1)) {
             placeShip(ship1);
         } else {
             System.out.println("You entered incorrect coordinates, please repeat your enter.");
@@ -56,5 +56,12 @@ public class User {
             return false;
         }
         return flag;
+    }
+    private boolean isFreeCells(int[] coordinates) {
+        if (field[coordinates[0] - 1][coordinates[1] - 1] == "|X") {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

@@ -8,5 +8,7 @@ public class GameDemo {
         printData.printField(user1.getField());
         user1.placeSingleDeckShips();
         printData.printField(user1.getField());
+        user1.placeSingleDeckShips();
+        printData.printField(user1.getField());
     }
 }
