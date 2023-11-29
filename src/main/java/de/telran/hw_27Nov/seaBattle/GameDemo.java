@@ -5,10 +5,9 @@ public class GameDemo {
     public static void main(String[] args) {
         User user1 = new User();
         PrintData printData = new PrintData();
-        printData.printField(user1.getField());
-        user1.placeSingleDeckShips();
-        printData.printField(user1.getField());
-        user1.placeSingleDeckShips();
-        printData.printField(user1.getField());
+        printData.printField(user1.getUserField());
+        user1.placeShips(2, 2);
+        printData.printField(user1.getUserField());
+
     }
 }
