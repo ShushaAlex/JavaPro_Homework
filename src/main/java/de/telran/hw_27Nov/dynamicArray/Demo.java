@@ -1,6 +1,7 @@
 package de.telran.hw_27Nov.dynamicArray;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Demo {
     public static void main(String[] args) {
@@ -19,5 +20,13 @@ public class Demo {
         System.out.println("getIndexes of element 6: " + Arrays.toString(array.getIndexes(6)));
         array.delete(2);
         System.out.println("array after delete index 2 " + array);
+
+        Iterator<Integer> iterator = array.iterator();
+
+        while (iterator.hasNext()) {
+            int elem = iterator.next();
+            System.out.println(elem);
+        }
+
     }
 }

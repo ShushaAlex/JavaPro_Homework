@@ -42,7 +42,7 @@ public class User {
         for (int i = 0; i < 4; i++) {
             int[] ship = ui.getCoordinates();
             if (isFreeCells(ship)) {
-                placeShip(ship);
+                placeShipOnField(ship);
             } else {
                 System.out.println("Thees cells are taken, please repeat your enter.");
                 placeSingleDeckShips();
@@ -53,11 +53,11 @@ public class User {
         for (int j = 0; j < shipsCount; j++) {
             int[][] ship = ui.getCoordinates(deckCount);
             for (int i = 0; i < deckCount; i++) {
-                placeShip(ship[i]);
+                placeShipOnField(ship[i]);
             }
         }
     }
-    private void placeShip(int[] ship) {
+    private void placeShipOnField(int[] ship) {
         userField[ship[0] - 1][ship[1] - 1] = "|X";
     }
 

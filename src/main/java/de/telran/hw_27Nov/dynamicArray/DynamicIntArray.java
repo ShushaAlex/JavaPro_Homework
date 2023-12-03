@@ -1,6 +1,8 @@
 package de.telran.hw_27Nov.dynamicArray;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 public class DynamicIntArray {
     private int length;
@@ -14,6 +16,32 @@ public class DynamicIntArray {
     }
     public DynamicIntArray(int capacity) {
         this.capacity = capacity;
+    }
+    private class DynamicIntArrayIterator implements Iterator<Integer>{
+
+        private int index;
+
+        DynamicIntArrayIterator() {
+            index = -1;
+        }
+        @Override
+        public boolean hasNext() {
+            if (index + 1 <= length) {
+                return true;
+            }
+            return false;
+        }
+        @Override
+        public Integer next() {
+            if (!hasNext())
+                throw new IllegalStateException("Нет следующего элемента!");
+            int item = arr[index + 1];
+            index++;
+            return item;
+        }
+    }
+    public Iterator<Integer> iterator() {
+        return new DynamicIntArrayIterator();
     }
 
     void add(int element) {
