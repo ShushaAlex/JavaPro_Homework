@@ -1,10 +1,10 @@
-package de.telran.hw_29Nov1Dez.arrayList_tasks.taskA;
+package de.telran.hw_29Nov1Dec.arrayList_tasks.taskA;
 
 import de.telran.hw_20Nov.henFactory.Hen;
 import de.telran.hw_20Nov.henFactory.henTypes.BelarusianHen;
 import de.telran.hw_20Nov.henFactory.henTypes.MoldovanHen;
-import de.telran.hw_29Nov1Dez.arrayList_tasks.taskC.TaskC;
-import de.telran.hw_29Nov1Dez.arrayList_tasks.taskD.TaskD;
+import de.telran.hw_29Nov1Dec.arrayList_tasks.taskC.TaskC;
+import de.telran.hw_29Nov1Dec.arrayList_tasks.taskD.TaskD;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package de.telran.hw_29Nov1Dez.arrayList_tasks.myLinkedList;
+package de.telran.hw_29Nov1Dec.arrayList_tasks.myLinkedList;
 
 import java.util.Iterator;
 
