@@ -21,10 +21,16 @@ public class BankDemo {
             i++;
         }
     }
-    public static void getTicketsOrder(ArrayList<Ticket> tickets, LocalTime time) {
-        if (time.getHour() >= 10 && time.getHour() <= 12)
-            tickets.sort(new ComparatorAge());
-        else tickets.sort(new ComparatorOperationType());
+    public static TreeSet<Ticket> getTicketsOrder(ArrayList<Ticket> tickets, LocalTime time) {
+        if (time.getHour() >= 10 && time.getHour() <= 12) {
+            TreeSet<Ticket> treeSet = new TreeSet<>(new ComparatorAge());
+            treeSet.addAll(tickets);
+            return treeSet;
+        } else {
+            TreeSet<Ticket> treeSet = new TreeSet<>(new ComparatorOperationType());
+            treeSet.addAll(tickets);
+            return treeSet;
+        }
     }
 
     public static void main(String[] args) {
@@ -40,13 +46,9 @@ public class BankDemo {
         // присвоили им номера талонов
         setTicketNumber(tickets);
 
-        getTicketsOrder(tickets, LocalTime.of(11, 23));
-        System.out.println(tickets);
-
-        getTicketsOrder(tickets, LocalTime.of(9, 23));
-        System.out.println(tickets);
-
-        System.out.println(LocalDateTime.now().getYear());
-
+        // сортировка по возрасту
+        System.out.println(getTicketsOrder(tickets, LocalTime.of(11, 23)));
+        // сортировка по типу операции
+        System.out.println(getTicketsOrder(tickets, LocalTime.of(9, 23)));
     }
 }
