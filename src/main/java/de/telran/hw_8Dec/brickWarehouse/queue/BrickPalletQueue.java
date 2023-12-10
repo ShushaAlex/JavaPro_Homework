@@ -17,11 +17,11 @@ public class BrickPalletQueue {
         }
     }
     public static void main(String[] args) {
-        // создаем стек паллет с кирпичами и
+        // создаем очередь паллет с кирпичами
         Queue<BrickPallet> pallets = new LinkedList<>();
-        //заполняем его
+        //заполняем ее
         loadPallets(pallets, 10);
-        //разгружаем его
+        //разгружаем ее
         System.out.println("Upload");
         upLoadPallets(pallets, 3);
 
