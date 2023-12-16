@@ -7,6 +7,7 @@ public class Car implements Comparable<Car> {
     private int number;
 
     public Car(CarType carType, int number) {
+        UserInput ui = new UserInput();
         this.carType = carType;
         this.number = number;
     }
