@@ -40,11 +40,11 @@ public class Task2and3 {
     public static void main(String[] args) {
         //Task2
         int[] array = {1, 2, 2, 3, 2, 3, 5, 4, 3, 65, 8, 9};
-        int[] array2 = {5, 2, 2, 3, 2, 3, 1, 4, 3, 9, 8, 65};
         System.out.println(getElement(array, 9));
         System.out.println(getElement(array, 3));
 
         //Task3
+        int[] array2 = {5, 2, 2, 3, 2, 3, 1, 4, 3, 9, 8, 65};
         System.out.println(areEqualsArrays(array2, array));
     }
 }
