@@ -15,7 +15,7 @@ public class CopyData {
         Origin - /Users/alex/IdeaProjects/JavaPro_Homework/src/main/java/de/telran/hw_10Jan/testFile.txt
         New - /Users/alex/IdeaProjects/JavaPro_Homework/src/main/java/de/telran/hw_10Jan/newFile.txt
          */
-        copyFile();
+         copyFile();
     }
 
     private static void copyFile() {
@@ -25,7 +25,7 @@ public class CopyData {
         System.out.print("Please, enter new file path: ");
         String newFile = scanner.next();
         String text = readFile(originFile);
-        wrightToFile(text, newFile);
+        writeToFile(text, newFile);
     }
 
     private static String readFile(String path) {
@@ -41,7 +41,7 @@ public class CopyData {
         return text.toString();
     }
 
-    private static void wrightToFile(String text, String path) {
+    private static void writeToFile(String text, String path) {
         try (FileWriter writer = new FileWriter(path)){
             for (int i = 0; i < text.length(); i++) {
                 writer.write(text.charAt(i));
