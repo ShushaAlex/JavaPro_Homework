@@ -3,8 +3,6 @@ package de.telran.hw_22Jan;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
-
 public class ArrayActions {
     /* Напишите программу на Java для поиска общих элементов между двумя массивами целых чисел
     example input:
