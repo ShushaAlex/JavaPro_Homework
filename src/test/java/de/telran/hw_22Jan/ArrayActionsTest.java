@@ -26,11 +26,6 @@ class ArrayActionsTest {
         int[] actualVal = aa.deleteDabbles(array);
         assertArrayEquals(expVal, actualVal);
     }
-    /*
-example input:
-    [-1, 4, 0, 2, 7, -3]
-    example expected -1
- */
     @Test
     void getSecondBigInt() {
         int expVal = 4;
