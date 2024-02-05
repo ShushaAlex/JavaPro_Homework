@@ -1,4 +1,4 @@
-package de.telran.hw_26Feb;
+package de.telran.hw_26Jan;
 
 import java.util.Scanner;
 
