@@ -35,11 +35,6 @@ class Target {
             } else {
                 System.out.println(Thread.currentThread().getName() + ": Missed");
             }
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
     }
 }
 
